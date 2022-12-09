@@ -8,11 +8,11 @@ read -p "Enter action symbol: " action
 
 case $action in
 "+") echo "$x + $y = " $(expr $y + $x);;
-"-") echo "$x - $y = "  $(expr $x - $y);;
+"-") echo "$x - $y = " $(expr $x - $y);;
 "/") if [ $y -eq 0 ]; then
        echo "You can't divide by zero";
      else
-       echo "$x / $y =" $(expr  $x / $y);
+       echo "$x / $y =" $(expr $x / $y);
      fi;;
-"*") echo "$x * $y = "$(expr  $x \* $y);;
+"*") echo "$x * $y = " $(expr $x \* $y);;
 esac
