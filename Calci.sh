@@ -2,12 +2,9 @@
 
 # Simple calculator for linux terminal
 
-echo "Enter first number:"
-read x
-echo "Enter second number"
-read y
-echo "Enter action symbol"
-read action
+read -p "Enter first number: " x
+read -p "Enter second number: " y
+read -p "Enter action symbol: " action
 
 case $action in
 "+") echo "$x + $y = " $(expr $y + $x);;
